@@ -19,6 +19,35 @@ export const metadata: Metadata = {
     template: "%s // sqlmerr",
   },
   description: "sqlmerr website",
+  openGraph: {
+    title: "sqlmerr",
+    description: "sqlmerr website",
+    url: "sqlmerr.vercel.app",
+    siteName: "sqlmerr",
+    images: [
+      {
+        url: "https://sqlmerr.vercel.app/og.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
