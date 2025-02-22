@@ -6,18 +6,21 @@ import Image from "next/image";
 
 const socials = [
   {
+    key: 0,
     icon: <Image src={"/telegram.svg"} alt="telegram" width={20} height={20} />,
     href: "https://t.me/sqlmerr",
     label: "Telegram",
     handle: "@sqlmerr",
   },
   {
+    key: 1,
     icon: <Image src={"/discord.svg"} alt="discord" width={20} height={20} />,
     href: "https://discord.com/users/625030268146810911",
     label: "Telegram",
     handle: "@sqlmerr",
   },
   {
+    key: 2,
     icon: <Image src={"/github.svg"} alt="github" width={20} height={20} />,
     href: "https://github.com/sqlmerr",
     label: "Github",
@@ -32,7 +35,7 @@ export default function Contact() {
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
           {socials.map((s) => (
-            <Card>
+            <Card key={s.key}>
               <Link
                 href={s.href}
                 target="_blank"
