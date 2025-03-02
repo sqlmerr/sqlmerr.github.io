@@ -16,7 +16,7 @@ const socials = [
     key: 1,
     icon: <Image src={"/discord.svg"} alt="discord" width={20} height={20} />,
     href: "https://discord.com/users/625030268146810911",
-    label: "Telegram",
+    label: "Discord",
     handle: "@sqlmerr",
   },
   {
