@@ -1,0 +1,14 @@
+.container {
+    position: fixed;
+    max-width: 600px;
+    padding: 10px;
+    color: white;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 100vw;
+    max-height: 100vh;
+    overflow-y: auto;
+}

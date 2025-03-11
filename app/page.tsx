@@ -3,8 +3,8 @@ import React from "react";
 import Particles from "@/components/particles";
 
 const navigation = [
-  { name: "Projects", href: "https://github.com/sqlmerr" },
-  { name: "Contact", href: "/contact" },
+  { name: "projects", href: "/projects" },
+  { name: "contact", href: "/contact" },
 ];
 
 export default function Home() {
