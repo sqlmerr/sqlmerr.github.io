@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getProjects } from "../utils";
 import { Navigation } from "@/components/nav";
-type ProjectPageProps = { params: { slug: Promise<any> } };
+type ProjectPageProps = { params: Promise<{ slug: string }> };
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;
