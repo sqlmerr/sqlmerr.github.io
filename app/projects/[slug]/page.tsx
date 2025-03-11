@@ -43,7 +43,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 }
 
 export async function generateStaticParams() {
-  let posts = getProjects();
+  const posts = getProjects();
 
   return posts.map((post) => ({
     slug: post.slug,

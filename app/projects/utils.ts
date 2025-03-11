@@ -1,12 +1,12 @@
 import fs from "fs";
 import path from "path";
 
-type Metadata = {
-  title: string;
-  descripion: string;
-  github?: string;
-  website?: string;
-};
+// type Metadata = {
+//   title: string;
+//   descripion: string;
+//   github?: string;
+//   website?: string;
+// };
 
 function getMDXFiles(dir: string) {
   return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
