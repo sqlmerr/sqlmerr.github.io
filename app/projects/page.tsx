@@ -14,7 +14,7 @@ export default function Projects() {
           {projects.map((proj) => (
             <li key={proj.slug}>
               <Link
-                className="flex flex-col space-y-1 mb-1"
+                className="flex flex-col space-y-1 mb-1 "
                 href={`/projects/${proj.slug}`}
               >
                 <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
