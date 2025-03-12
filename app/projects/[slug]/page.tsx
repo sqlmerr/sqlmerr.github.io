@@ -33,9 +33,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </Link>
           )}
         </p>
-        {"-".repeat(50)}
+        {"-".repeat(35)}
         <p>{metadata.description ? metadata.description : "None"}</p>
-        {"-".repeat(50)}
+        {"-".repeat(35)}
         <ProjectMarkdown />
       </div>
     </>
